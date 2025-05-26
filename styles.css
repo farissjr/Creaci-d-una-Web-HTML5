@@ -1,0 +1,292 @@
+/* Estils generals */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #111;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #0044cc;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  color: #002a7f;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1rem;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #d10000;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background: url('https://m.media-amazon.com/images/S/pv-target-images/1cb498f99eaa6de69828dc8e1270041e7f4be3637881abdf279fed61627ea4ab.jpg') no-repeat center center/cover;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Featured teams */
+.featured {
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.featured h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.team-card {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.02);
+}
+
+.team-card img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* News section */
+.news {
+  padding: 3rem 2rem;
+  background-color: #fdfdfd;
+}
+
+.news h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.news article {
+  margin-bottom: 2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.news article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.news h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+/* About section */
+.about {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about img {
+  max-width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #fff;
+  color: #555;
+  border-top: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .team-card img,
+  .news article img,
+  .about img {
+    height: auto;
+  }
+}
+
+
+/* Contact section */
+.contact-section {
+  background: url('https://img.uefa.com/imgml/uefacom//fallback.jpg') no-repeat center center/cover;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.contact-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  background-color: #002a7f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0044cc;
+}
+
+/* Hero personalitzat per a Qui Som */
+.qui-som-hero {
+  background: url('https://editorial.uefa.com/resources/0286-193b26328c40-57cc964246af-1000/uefa_corporate_black_logo.png') no-repeat center center/cover;
+  height: 55vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.qui-som-hero .hero-overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 700px;
+}

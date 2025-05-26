@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qui som - UEFA Champions League</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Champions League</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="qui-som.html" class="active">Qui som</a></li>
+      <li><a href="contacte.html">Contacte</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <header class="hero qui-som-hero">
+    <div class="hero-overlay">
+      <h1>Sobre la UEFA Champions League</h1>
+      <p>Descobreix qui hi ha darrere la competició més prestigiosa d'Europa.</p>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>Història i Organització</h2>
+    <img src="https://editorial.uefa.com/resources/028b-1a845ffc218a-368e8ebf5b7f-1000/our-history-16x9.jpeg" alt="Història UEFA">
+    <p>La UEFA va ser fundada el 1954 amb l'objectiu de coordinar les federacions de futbol europees. La Champions League, creada el 1955, ha crescut fins a convertir-se en el torneig de clubs més important del món.</p>
+
+    <h2>Presidència</h2>
+    <img src="https://editorial.uefa.com/resources/025b-0f8e75f7b3f3-40aeae0e6aad-1000/uefa_president_aleksander_ceferin.jpeg" alt="President UEFA">
+    <p>Actualment, el president de la UEFA és Aleksander Čeferin, qui ocupa el càrrec des de 2016. Sota el seu lideratge, la UEFA ha impulsat diverses reformes i iniciatives per a millorar el futbol europeu.</p>
+
+    <h2>Contacte i Identitat</h2>
+    <img src="https://editorial.uefa.com/resources/0286-193b26328c40-57cc964246af-1000/uefa_corporate_black_logo.png" alt="Logo UEFA">
+    <p>Amb seu a Nyon, Suïssa, la UEFA coordina més de 50 federacions nacionals i organitza múltiples competicions. Per a més informació, visita la pàgina oficial o contacta a través dels canals oficials.</p>
+
+    <h2>Els Trofeus</h2>
+    <img src="https://editorial.uefa.com/resources/0239-0f8a33ee33ea-63edc95a8550-1000/the_uefa_champions_league_uefa_super_cup_and_uefa_europa_league_trophies.jpeg" alt="Trofeus UEFA">
+    <p>Els trofeus de la UEFA Champions League, UEFA Europa League i la Supercopa representen el cim de l'èxit futbolístic europeu. Cada temporada, centenars d’equips lluiten per aquests prestigiosos guardons.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Champions League Fanpage. No oficial.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

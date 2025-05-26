@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UEFA Champions League</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Champions League</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Inici</a></li>
+      <li><a href="qui-som.html">Qui som</a></li>
+      <li><a href="contacte.html">Contacte</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Benvinguts a la UEFA Champions League</h1>
+      <p>Segueix tota la informació dels millors equips d'Europa.</p>
+    </div>
+  </header>
+
+  <section class="featured">
+    <h2>Equips destacats 2025</h2>
+    <div class="team-card">
+      <img src="https://image.discovery.indazn.com/ca/v2/ca/image?id=2054d098-5017-46e5-afcf-58bf117c1ac1&quality=70" alt="Real Madrid">
+      <h3>Real Madrid</h3>
+      <p>14 cops campió de la Champions.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://www.futbox.com/img/v1/d0d/0cd/3cd/af3/6462fa1917d3cb7a7d2b.png" alt="Manchester City">
+      <h3>Manchester City</h3>
+      <p>Campió 2023 i fort candidat el 2025.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://carboncredits.com/wp-content/uploads/2025/05/shutterstock_1097992700.jpg" alt="FC Barcelona">
+      <h3>FC Barcelona</h3>
+      <p>Amb una nova generació d'estrelles.</p>
+    </div>
+  </section>
+
+  <section class="news">
+    <h2>Últimes notícies</h2>
+    <article>
+      <img src="https://img.3cat.cat/multimedia/png/9/8/1741853983689_1200x677.png" alt="Partits de quarts">
+      <h4>Els quarts de final prenen forma</h4>
+      <p>Els vuit millors equips d’Europa competeixen per un lloc a semifinals. Partits intensos i plens d’emocions!</p>
+    </article>
+    <section class="news">
+    <article>
+      <img src="https://piks.eldesmarque.com/thumbs/o/1200/bin/2024/12/11/viniciusjpg_001.jpg" alt="Vinícius Jr. celebrando un gol">
+      <h3>Vinícius Jr. en gran forma</h3>
+      <p>El brasiler lidera el Madrid amb gols clau i assistències en moments decisius.</p>
+    </article>
+  </section>
+
+  <section class="about">
+    <h2>Sobre la UEFA Champions League</h2>
+    <img src="https://estaticos-cdn.prensaiberica.es/clip/7d9afa6d-5af9-40b5-9e68-754dde159d23_alta-libre-aspect-ratio_default_0.jpg" alt="Trofeu Champions">
+    <p>
+      La UEFA Champions League és la competició de clubs més prestigiosa d'Europa. Fundada el 1955, reuneix cada temporada els millors equips de cada lliga europea per competir pel trofeu més cobejat del futbol de clubs. Des dels seus inicis, ha estat escenari de moments històrics i grans llegendes del futbol mundial.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Champions League Fanpage. No oficial.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacte</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Champions League</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="qui-som.html">Qui som</a></li>
+      <li><a href="contacte.html" class="active">Contacte</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <section class="contact-section">
+    <div class="contact-overlay">
+      <h2>Contacta amb nosaltres</h2>
+      <form class="contact-form">
+        <input type="email" placeholder="Correu electrònic" required>
+        <input type="tel" placeholder="Número de telèfon">
+        <input type="text" placeholder="Club favorit" required>
+        <textarea rows="5" placeholder="Escriu el teu missatge..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Champions League Fanpage. No oficial.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
